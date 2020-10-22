@@ -1,0 +1,10 @@
+#quote-box {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  background-color: aqua
+}
+
+#root {
+  background-color: blue;
+}
