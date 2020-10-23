@@ -5,10 +5,10 @@ import * as serviceWorker from './serviceWorker';
 import QuoteMachine from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <QuoteMachine />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <QuoteMachine />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

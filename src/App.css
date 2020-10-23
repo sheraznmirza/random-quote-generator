@@ -1,10 +1,29 @@
 #quote-box {
-  height: 100%;
-  width: 50%;
   text-align: center;
-  background-color: aqua
 }
 
 #root {
-  background-color: blue;
+  background-color: white;
+  height: 200px;
+  border-radius: 1%;
+  width: 25%;
 }
+
+body {
+  background-color: mediumaquamarine;
+  padding-top: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tweet-quote {
+  font-size: xx-large;
+  margin-left: -50%;
+}
+
+#new-quote {
+  margin-right: -60px;
+  border-radius: 5px;
+}
+
