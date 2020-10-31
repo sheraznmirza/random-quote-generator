@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {quoting} from './database'
 import {colors} from './database'
+import Button from 'react-bootstrap/Button'
 
 class QuoteMachine extends React.Component {
     constructor(props) {
@@ -14,10 +15,15 @@ class QuoteMachine extends React.Component {
     }
 
     handleClick() {
-        const temp = this.state.randomIndex;
+        const tempIndex = this.state.randomIndex;
+        const tempColor = this.state.randomColor;
         let newRandomIndex = Math.floor(Math.random() * quoting.length);
-        while (temp === newRandomIndex) {
+        let newRandomColor = Math.floor(Math.random * colors.length);
+        while (tempIndex === newRandomIndex) {
             newRandomIndex = Math.floor(Math.random() * quoting.length);
+        }
+        while (tempColor === newRandomColor) {
+            newRandomColor = Math.floor(Math.random * colors.length);
         }
         this.setState(
             {
@@ -29,11 +35,11 @@ class QuoteMachine extends React.Component {
             color: this.state.randomColor
         }
         return (
-            <div id="quote-box">
+            <div id="quote-box" className="container">
                 <h1 id="text" style={changingColor}>{quoting[this.state.randomIndex].quote}</h1>
                 <h4 id="author">- {quoting[this.state.randomIndex].author}</h4>
-                <a id="tweet-quote" href="twitter.com/intent/tweet"><i class="fa fa-twitter-square"></i></a>
-                <button id="new-quote" onClick={this.handleClick}>New quote</button>
+                <a id="tweet-quote" href="twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
+                <Button variant="outline-dark" id="new-quote" onClick={this.handleClick}>New quote</Button>
 
             </div>
         );
