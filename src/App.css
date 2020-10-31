@@ -18,13 +18,19 @@ body {
   justify-content: center;
 }
 
+#author {
+  padding-bottom: 10px;
+}
+
 #tweet-quote {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: -30px;
   font-size: xx-large;
-  margin-left: -50%;
 }
 
 #new-quote {
-  margin-right: -60px;
+  margin-bottom: 15px;
   border-radius: 5px;
 }
 
