@@ -144,7 +144,7 @@ export const quoting = [
     },
     {
         "quote": "From small beginnings come great things.",
-        "author": ""
+        "author": "Uncle Ben"
     }, {
         "quote": "Learning is a treasure that will follow its owner everywhere",
         "author": "Chinese proverb"
@@ -352,14 +352,14 @@ export const quoting = [
     },
     {
         "quote": "The day is already blessed, find peace within it.",
-        "author": ""
+        "author": "The Bob"
     }, {
         "quote": "It takes both sunshine and rain to make a rainbow.",
-        "author": ""
+        "author": "Boobo"
     },
     {
         "quote": "A beautiful thing is never perfect.",
-        "author": ""
+        "author": "Mr Sister"
     },
     {
         "quote": "Only do what your heart tells you.",
