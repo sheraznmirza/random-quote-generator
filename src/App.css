@@ -10,7 +10,7 @@
   width: 25%;
 }
 
-body {
+.main {
   background-color: mediumaquamarine;
   padding-top: 17%;
   display: flex;

@@ -12,9 +12,10 @@ class QuoteMachine extends React.Component {
             randomColor: Math.floor(Math.random() * colors.length)
         }
         this.handleClick = this.handleClick.bind(this);
+        this.randomize = this.randomize.bind(this);
     }
 
-    handleClick() {
+    randomize() {
         const tempIndex = this.state.randomIndex;
         const tempColor = this.state.randomColor;
         let newRandomIndex = Math.floor(Math.random() * quoting.length);
@@ -27,17 +28,22 @@ class QuoteMachine extends React.Component {
         }
         this.setState(
             {
-                randomIndex: newRandomIndex
+                randomIndex: newRandomIndex,
+                randomColor: newRandomColor
             });
+    }
+
+    handleClick() {
+        this.randomize();
     }
     render() {
         const changingColor = {
-            color: this.state.randomColor
+            color: colors[this.state.randomColor]
         }
         return (
             <div id="quote-box" className="container">
                 <h1 id="text" className="text-fade" style={changingColor}>{quoting[this.state.randomIndex].quote}</h1>
-                <h4 id="author">- {quoting[this.state.randomIndex].author}</h4>
+                <h4 id="author" className="text-fade" style={changingColor}>- {quoting[this.state.randomIndex].author}</h4>
                 <a id="tweet-quote" href="twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
                 <Button variant="outline-dark" id="new-quote" onClick={this.handleClick}>New quote</Button>
 
