@@ -34,4 +34,19 @@ body {
   border-radius: 5px;
 }
 
+.text-fade {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+@keyframes fade-in {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
