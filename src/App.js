@@ -26,6 +26,7 @@ class QuoteMachine extends React.Component {
         while (tempColor === newRandomColor) {
             newRandomColor = Math.floor(Math.random() * colors.length);
         }
+        console.log(newRandomColor);
         this.setState(
             {
                 randomIndex: newRandomIndex,

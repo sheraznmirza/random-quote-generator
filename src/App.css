@@ -3,6 +3,11 @@
   align-items: center;
 }
 
+#text {
+  text-align: center;
+  justify-content: center;
+}
+
 #root {
   display: flex;
   background-color: white;
@@ -34,19 +39,5 @@
   border-radius: 5px;
 }
 
-.text-fade {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 2s;
-}
 
-@keyframes fade-in {
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
