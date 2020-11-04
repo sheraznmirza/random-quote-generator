@@ -19,12 +19,12 @@ class QuoteMachine extends React.Component {
         const tempIndex = this.state.randomIndex;
         const tempColor = this.state.randomColor;
         let newRandomIndex = Math.floor(Math.random() * quoting.length);
-        let newRandomColor = Math.floor(Math.random * colors.length);
+        let newRandomColor = Math.floor(Math.random() * colors.length);
         while (tempIndex === newRandomIndex) {
             newRandomIndex = Math.floor(Math.random() * quoting.length);
         }
         while (tempColor === newRandomColor) {
-            newRandomColor = Math.floor(Math.random * colors.length);
+            newRandomColor = Math.floor(Math.random() * colors.length);
         }
         this.setState(
             {
@@ -41,15 +41,16 @@ class QuoteMachine extends React.Component {
             color: colors[this.state.randomColor]
         }
         return (
-            <div id="quote-box" className="container">
-                <h1 id="text" className="text-fade" style={changingColor}>{quoting[this.state.randomIndex].quote}</h1>
-                <h4 id="author" className="text-fade" style={changingColor}>- {quoting[this.state.randomIndex].author}</h4>
+            <div id="quote-box">
+                <h1 id="text" className="text-fade" style={changingColor} key={quoting[this.state.randomIndex].quote}>  {quoting[this.state.randomIndex].quote}</h1>
+                <h4 id="author" className="text-fade" style={changingColor} key={quoting[this.state.randomIndex].author}>- {quoting[this.state.randomIndex].author}</h4>
                 <a id="tweet-quote" href="twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
                 <Button variant="outline-dark" id="new-quote" onClick={this.handleClick}>New quote</Button>
-
             </div>
         );
     }
 }
+
+
 
 export default QuoteMachine;
