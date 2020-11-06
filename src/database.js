@@ -28,10 +28,6 @@ export const quoting = [
         "author": "Carl Sandburg"
     },
     {
-        "quote": "Well begun is half done.",
-        "author": "Aristotle"
-    },
-    {
         "quote": "Life is a learning experience, only if you learn.",
         "author": "Yogi Berra"
     },
@@ -92,10 +88,6 @@ export const quoting = [
         "author": "Napoleon Hill"
     },
     {
-        "quote": "Everything in life is luck.",
-        "author": "Donald Trump"
-    },
-    {
         "quote": "Doing nothing is better than being busy doing nothing.",
         "author": "Lao Tzu"
     },
@@ -150,10 +142,6 @@ export const quoting = [
         "author": "Chinese proverb"
     },
     {
-        "quote": "Be as you wish to seem.",
-        "author": "Socrates"
-    },
-    {
         "quote": "The world is always in movement.",
         "author": "V. Naipaul"
     },
@@ -181,16 +169,12 @@ export const quoting = [
         "quote": "Be kind whenever possible. It is always possible.",
         "author": "Dalai Lama"
     }, {
-        "quote": "Talk doesn't cook rice.",
+        "quote": "Talking does not cook rice.",
         "author": "Chinese proverb"
     },
     {
         "quote": "He is able who thinks he is able.",
         "author": "Buddha"
-    },
-    {
-        "quote": "Be as you wish to seem.",
-        "author": "Socrates"
     },
     {
         "quote": "A goal without a plan is just a wish.",
@@ -243,16 +227,12 @@ export const quoting = [
         "author": "Napoleon Hill"
     },
     {
-        "quote": "Wisdom begins in wonder.",
+        "quote": "Wisdom begins when one wonders.",
         "author": "Socrates"
     },
     {
         "quote": "Without courage, wisdom bears no fruit.",
         "author": "Baltasar Gracian"
-    },
-    {
-        "quote": "Change in all things is sweet.",
-        "author": "Aristotle"
     },
     {
         "quote": "What you fear is that which requires action to overcome.",
@@ -341,10 +321,6 @@ export const quoting = [
     {
         "quote": "Those who are free of resentful thoughts surely find peace.",
         "author": "Buddha"
-    },
-    {
-        "quote": "Talk doesn't cook rice.",
-        "author": "Chinese proverb"
     },
     {
         "quote": "A short saying often contains much wisdom.",

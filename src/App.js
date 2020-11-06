@@ -41,12 +41,20 @@ class QuoteMachine extends React.Component {
         const changingColor = {
             color: colors[this.state.randomColor]
         }
+        const changingBackground = {
+            backgroundColor: colors[this.state.randomColor]
+        }
         return (
+            <div className="main" style={changingBackground}>
             <div id="quote-box">
-                <h1 id="text" className="text-fade" style={changingColor} key={quoting[this.state.randomIndex].quote}>  {quoting[this.state.randomIndex].quote}</h1>
+                <h1 id="text" className="text-fade" style={changingColor} key={quoting[this.state.randomIndex].quote}> "{quoting[this.state.randomIndex].quote}</h1>
                 <h4 id="author" className="text-fade" style={changingColor} key={quoting[this.state.randomIndex].author}>- {quoting[this.state.randomIndex].author}</h4>
-                <a id="tweet-quote" href="twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
-                <Button variant="outline-dark" id="new-quote" onClick={this.handleClick}>New quote</Button>
+                <div className="buttons">
+                    <a id="tweet-quote" href="#"><i class="fa fa-twitter"></i></a>
+                    <Button variant="outline-dark" id="new-quote" onClick={this.handleClick}>New quote</Button>
+                </div>
+                
+            </div>
             </div>
         );
     }

@@ -1,36 +1,30 @@
 #quote-box {
-  text-align: center;
-  align-items: center;
-}
-
-#text {
-  text-align: center;
-  justify-content: center;
-}
-
-#root {
-  display: flex;
   background-color: white;
   border-radius: 1%;
   width: 25%;
+  text-align: center;
+  height: max-content;
 }
 
 .main {
-  background-color: mediumaquamarine;
-  padding-top: 17%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: mediumaquamarine;
+  align-items: center;
 }
 
 #author {
   padding-bottom: 10px;
 }
 
-#tweet-quote {
+.buttons {
   display: flex;
-  margin-left: 10px;
-  margin-bottom: -30px;
+}
+
+#tweet-quote {
+  
   font-size: xx-large;
 }
 
