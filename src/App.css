@@ -11,7 +11,6 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: mediumaquamarine;
   align-items: center;
 }
 
@@ -24,14 +23,30 @@
 }
 
 #tweet-quote {
-  
+  margin-left: 1rem;
   font-size: xx-large;
 }
 
 #new-quote {
   margin-bottom: 10px;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: 1rem;
 }
 
+.shift-color {
+  animation-name: colorful;
+  animation-duration: 1s;
+}
 
+@keyframes colorful {
+  
+  0% {
+    background-color: tomato;
+  }
+  
+  100% {
+    background-color: blue;
+  }
+}
 

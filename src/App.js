@@ -9,10 +9,12 @@ class QuoteMachine extends React.Component {
         super(props);
         this.state = {
             randomIndex: Math.floor(Math.random() * quoting.length),
-            randomColor: Math.floor(Math.random() * colors.length)
+            randomColor: Math.floor(Math.random() * colors.length),
+            activate: ""
         }
         this.handleClick = this.handleClick.bind(this);
         this.randomize = this.randomize.bind(this);
+        this.morphColor = this.morphColor.bind(this);
     }
 
     randomize() {
@@ -26,12 +28,18 @@ class QuoteMachine extends React.Component {
         while (tempColor === newRandomColor) {
             newRandomColor = Math.floor(Math.random() * colors.length);
         }
-        console.log(newRandomColor);
         this.setState(
             {
                 randomIndex: newRandomIndex,
                 randomColor: newRandomColor
             });
+    }
+
+    morphColor() {
+        this.setState(
+        {
+            activate : "shift-color"
+        });
     }
 
     handleClick() {
