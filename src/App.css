@@ -1,3 +1,7 @@
+html {
+  transition: background-color 1s;
+}
+
 #quote-box {
   background-color: white;
   border-radius: 1%;
