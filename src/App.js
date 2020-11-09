@@ -50,7 +50,7 @@ class QuoteMachine extends React.Component {
                 <h1 id="text" style={changingColor} key={quoting[this.state.randomIndex].quote}> <a><i class="fa fa-quote-left"></i></a> {quoting[this.state.randomIndex].quote}</h1>
                 <h4 id="author" style={changingColor} key={quoting[this.state.randomIndex].author}>- {quoting[this.state.randomIndex].author}</h4>
                 <div className="buttons">
-                    <a id="tweet-quote" href="#" title="Tweet this quote!"><i class="fa fa-twitter"></i></a>
+                    <a id="tweet-quote" href="https://twitter.com/intent/tweet" title="Tweet this quote!"><i class="fa fa-twitter"></i></a>
                     <Button variant="outline-dark" id="new-quote" onClick={this.handleClick}>New quote</Button>
                 </div>
                 
