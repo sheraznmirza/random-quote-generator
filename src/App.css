@@ -1,7 +1,3 @@
-html {
-  transition: background-color 1s;
-}
-
 #quote-box {
   background-color: white;
   border-radius: 1%;
@@ -37,20 +33,3 @@ html {
   margin-left: auto;
   margin-right: 1rem;
 }
-
-.shift-color {
-  animation-name: colorful;
-  animation-duration: 1s;
-}
-
-@keyframes colorful {
-  
-  0% {
-    background-color: tomato;
-  }
-  
-  100% {
-    background-color: blue;
-  }
-}
-
